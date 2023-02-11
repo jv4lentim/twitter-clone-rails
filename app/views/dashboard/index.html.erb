@@ -8,6 +8,6 @@
 
 <ul>
     <%= Tweet.find_each do |tweet | %>
-        <li><%= tweet.body %></li>
+        <li><%= tweet.user.username %> | <%= tweet.body %></li>
     <% end %>
 </ul>
